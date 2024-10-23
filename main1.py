@@ -1,11 +1,10 @@
-<<<<<<< HEAD
-from tkinter import *
-window = Tk()
+import os
+print(os.environ['HOME'])
 
-button = Button(window)
-button.pack()
+import tkinter
 
-window.mainloop()
-=======
-print("Hello World")
->>>>>>> 59c165ac01ebb25e372fb0fd36558fab495d8a13
+root = tkinter.Tk()
+label = tkinter.Label(root, text="Hello World!")
+label.pack()
+root.mainloop()
+#sdfjndfkjdsnfkg3iwtgiw

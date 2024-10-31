@@ -1,9 +1,159 @@
 <!DOCTYPE html>
 <html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
+<title>Rubik's Cube ISP</title>
+</head>
+
 <body>
+<table onclick="changeColor(event)">
 
-<h1>Title</h1>
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="red" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;"></td>
+    <td class="red" style="border: 3px solid black; border-top: 5px solid black;"></td>
+    <td class="red" style="border: 3px solid black; border-right: 5px solid black; border-top: 5px solid black;"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
 
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="red" style="border: 3px solid black; border-left: 5px solid black;"></td>
+    <td class="red" style="border: 3px solid black;"></td>
+    <td class="red" style="border: 3px solid black; border-right: 5px solid black;"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="red" style="border: 3px solid black; border-bottom: 5px solid black; border-left: 5px solid black;"></td>
+    <td class="red" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
+    <td class="red" style="border: 3px solid black; border-bottom: 5px solid black; border-right: 5px solid black;"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+
+<tr>
+    <td class="blue" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;"></td>
+    <td class="blue" style="border: 3px solid black; border-top: 5px solid black;"></td>
+    <td class="blue" style="border: 3px solid black; border-top: 5px solid black;"></td>
+    <td class="white" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;"></td>
+    <td class="white" style="border: 3px solid black; border-top: 5px solid black;"></td>
+    <td class="white" style="border: 3px solid black; border-top: 5px solid black;"></td>
+    <td class="green" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;"></td>
+    <td class="green" style="border: 3px solid black; border-top: 5px solid black;"></td>
+    <td class="green" style="border: 3px solid black; border-top: 5px solid black;"></td>
+    <td class="yellow" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;"></td>
+    <td class="yellow" style="border: 3px solid black; border-top: 5px solid black;"></td>
+    <td class="yellow" style="border: 3px solid black; border-right: 5px solid black; border-top: 5px solid black;"></td>
+</tr>
+
+<tr>
+    <td class="blue" style="border: 3px solid black; border-left: 5px solid black;"></td>
+    <td class="blue" style="border: 3px solid black;"></td>
+    <td class="blue" style="border: 3px solid black;"></td>
+    <td class="white" style="border: 3px solid black; border-left: 5px solid black;"></td>
+    <td class="white" style="border: 3px solid black;"></td>
+    <td class="white" style="border: 3px solid black;"></td>
+    <td class="green" style="border: 3px solid black; border-left: 5px solid black;"></td>
+    <td class="green" style="border: 3px solid black;"></td>
+    <td class="green" style="border: 3px solid black;"></td>
+    <td class="yellow" style="border: 3px solid black; border-left: 5px solid black;"></td>
+    <td class="yellow" style="border: 3px solid black;"></td>
+    <td class="yellow" style="border: 3px solid black; border-right: 5px solid black;"></td>
+</tr>
+
+<tr>
+    <td class="blue" style="border: 3px solid black; border-left: 5px solid black; border-bottom: 5px solid black;"></td>
+    <td class="blue" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
+    <td class="blue" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
+    <td class="white" style="border: 3px solid black; border-left: 5px solid black; border-bottom: 5px solid black;"></td>
+    <td class="white" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
+    <td class="white" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
+    <td class="green" style="border: 3px solid black; border-left: 5px solid black; border-bottom: 5px solid black;"></td>
+    <td class="green" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
+    <td class="green" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
+    <td class="yellow" style="border: 3px solid black; border-left: 5px solid black; border-bottom: 5px solid black;"></td>
+    <td class="yellow" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
+    <td class="yellow" style="border: 3px solid black; border-right: 5px solid black; border-bottom: 5px solid black;"></td>
+</tr>
+
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="orange" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;"></td>
+    <td class="orange" style="border: 3px solid black; border-top: 5px solid black;"></td>
+    <td class="orange" style="border: 3px solid black; border-right: 5px solid black; border-top: 5px solid black;"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="orange" style="border: 3px solid black; border-left: 5px solid black;"></td>
+    <td class="orange" style="border: 3px solid black;"></td>
+    <td class="orange" style="border: 3px solid black; border-right: 5px solid black;"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="orange" style="border: 3px solid black; border-bottom: 5px solid black; border-left: 5px solid black;"></td>
+    <td class="orange" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
+    <td class="orange" style="border: 3px solid black; border-bottom: 5px solid black; border-right: 5px solid black;"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+
+</table>
+
+<br>
+
+<button onClick="changeActiveColorToRed()">Red</button>
+<button onClick="changeActiveColorToBlue()">Blue</button>
+<button onClick="changeActiveColorToWhite()">White</button>
+<button onClick="changeActiveColorToGreen()">Green</button>
+<button onClick="changeActiveColorToYellow()">Yellow</button>
+<button onClick="changeActiveColorToOrange()">Orange</button>
 
 </body>
 </html>

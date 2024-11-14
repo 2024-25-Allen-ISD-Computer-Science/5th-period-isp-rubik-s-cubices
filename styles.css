@@ -7,7 +7,7 @@
 body {
   width     : 100%;
   min-height: 100vh;
-  background: linear-gradient(to bottom right, rgb(104, 9, 104), rgb(179, 54, 131));
+  background: linear-gradient(to bottom right, rgb(31, 0, 188), rgb(0, 157, 255));
   overflow  : hidden;
   cursor    : move;
 }

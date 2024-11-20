@@ -1,27 +1,41 @@
 var activeColor = '';
+var activeLetter = '';
+
+var numWhites = 0;
+var numReds = 0;
+var numBlues = 0;
+var numGreens = 0;
+var numOranges = 0;
+var numYellows = 0;
 
 function changeActiveColorToRed() {
 	activeColor = 'red';
+	activeLetter = 'R';
 }
 
 function changeActiveColorToBlue() {
 	activeColor = 'blue';
+	activeLetter = 'B';
 }
 
 function changeActiveColorToWhite() {
 	activeColor = 'white';
+	activeLetter = 'W';
 }
 
 function changeActiveColorToGreen() {
 	activeColor = 'lime';
+	activeLetter = 'G';
 }
 
 function changeActiveColorToYellow() {
 	activeColor = 'yellow';
+	activeLetter = 'Y';
 }
 
 function changeActiveColorToOrange() {
 	activeColor = 'orange';
+	activeLetter = 'O';
 }
 
 function changeColor(event) {
@@ -34,6 +48,7 @@ function changeColor(event) {
     // Check if the class name is in the validColors array
     if (validColors.includes(className) && event.target.style.cssText) {
         event.target.style.backgroundColor = activeColor;
+		event.target.textContent = activeLetter;
     }
 }
 
@@ -65,6 +80,7 @@ const rubiksCube = [
     ['O','Y'],
     ['G','O','Y']
     ];
+	
 const mapping = [
     [['','',''],[rubiksCube[17][0],rubiksCube[18][0],rubiksCube[19][0]],['','',''],['','','']],
     [['','',''],[rubiksCube[9][0],rubiksCube[10][0],rubiksCube[11][0]],['','',''],['','','']],
@@ -81,4 +97,101 @@ const mapping = [
   console.log(mapping[i]);
 }*/
 
-console.log(mapping);
+//console.log(mapping);
+
+
+
+function checkNumbers() {
+    numWhites = 0;
+    numReds = 0;
+    numBlues = 0;
+    numGreens = 0;
+    numOranges = 0;
+    numYellows = 0;
+
+    const cells = document.querySelectorAll('#main td');
+
+    cells.forEach(cell => {
+        const color = window.getComputedStyle(cell).backgroundColor;
+        
+        switch(color) {
+            case 'rgb(255, 0, 0)':
+                numReds++;
+                break;
+            case 'rgb(0, 0, 255)':
+                numBlues++;
+                break;
+            case 'rgb(0, 255, 0)':
+                numGreens++;
+                break;
+            case 'rgb(255, 165, 0)':
+                numOranges++;
+                break;
+            case 'rgb(255, 255, 0)':
+                numYellows++;
+                break;
+            case 'rgb(255, 255, 255)':
+                numWhites++;
+                break;
+        }
+    });
+
+    console.log("White faces:", numWhites);
+    console.log("Red faces:", numReds);
+    console.log("Blue faces:", numBlues);
+    console.log("Green faces:", numGreens);
+    console.log("Orange faces:", numOranges);
+    console.log("Yellow faces :", numYellows);
+	
+	console.log("");
+	if(numWhites == 9 && numReds == 9 && numBlues == 9 && numGreens == 9 && numOranges == 9 && numYellows == 9){
+		console.log("Number of each color is correct!");
+	} else {
+		if (numWhites != 9){
+			if (numWhites > 9) {
+				console.log("You have too many white faces!")
+			} else {
+				console.log("You don't have enough white faces!")
+			}
+		} if (numReds != 9){
+			if (numReds > 9) {
+				console.log("You have too many red faces!")
+			} else {
+				console.log("You don't have enough red faces!")
+			}
+		} if (numBlues != 9){
+			if (numBlues > 9) {
+				console.log("You have too many blue faces!")
+			} else {
+				console.log("You don't have enough blue faces!")
+			}
+		} if (numGreens != 9){
+			if (numGreens > 9) {
+				console.log("You have too many green faces!")
+			} else {
+				console.log("You don't have enough green faces!")
+			}
+		} if (numOranges != 9){
+			if (numOranges > 9) {
+				console.log("You have too many orange faces!")
+			} else {
+				console.log("You don't have enough orange faces!")
+			}
+		} if (numYellows != 9){
+			if (numYellows > 9) {
+				console.log("You have too many yellow faces!")
+			} else {
+				console.log("You don't have enough yellow faces!")
+			}
+		}
+	}
+}
+
+//const placeholder = [];
+
+/*for (let i=1; i<=56; i++){
+	var txt = "a"+i;
+	console.log(document.getElementById("a1").textContent);
+}*/
+
+//print(placeholder);

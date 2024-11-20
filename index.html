@@ -2,22 +2,20 @@
 <html>
 <head>
 <link rel="stylesheet" href="styles.css">
-
 <script src="script.js"></script>
-
 <title>Rubik's Cube ISP</title>
 </head>
 
 <body>
-<table onclick="changeColor(event)">
+<table onclick="changeColor(event)" id="main">
 
 <tr>
     <td></td>
     <td></td>
     <td></td>
-    <td class="red" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;"></td>
-    <td class="red" style="border: 3px solid black; border-top: 5px solid black;"></td>
-    <td class="red" style="border: 3px solid black; border-right: 5px solid black; border-top: 5px solid black;"></td>
+    <td class="red" id="a34" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;">R</td>
+    <td class="red" id="a37" style="border: 3px solid black; border-top: 5px solid black;">R</td>
+    <td class="red" id="a39" style="border: 3px solid black; border-right: 5px solid black; border-top: 5px solid black;">R</td>
     <td></td>
     <td></td>
     <td></td>
@@ -30,9 +28,9 @@
     <td></td>
     <td></td>
     <td></td>
-    <td class="red" style="border: 3px solid black; border-left: 5px solid black;"></td>
-    <td class="red" style="border: 3px solid black;"></td>
-    <td class="red" style="border: 3px solid black; border-right: 5px solid black;"></td>
+    <td class="red" id="a22" style="border: 3px solid black; border-left: 5px solid black;">R</td>
+    <td class="red" id="a24" style="border: 3px solid black;">R</td>
+    <td class="red" id="a25" style="border: 3px solid black; border-right: 5px solid black;">R</td>
     <td></td>
     <td></td>
     <td></td>
@@ -45,9 +43,9 @@
     <td></td>
     <td></td>
     <td></td>
-    <td class="red" style="border: 3px solid black; border-bottom: 5px solid black; border-left: 5px solid black;"></td>
-    <td class="red" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
-    <td class="red" style="border: 3px solid black; border-bottom: 5px solid black; border-right: 5px solid black;"></td>
+    <td class="red" id="a2" style="border: 3px solid black; border-bottom: 5px solid black; border-left: 5px solid black;">R</td>
+    <td class="red" id="a5" style="border: 3px solid black; border-bottom: 5px solid black;">R</td>
+    <td class="red" id="a7" style="border: 3px solid black; border-bottom: 5px solid black; border-right: 5px solid black;">R</td>
     <td></td>
     <td></td>
     <td></td>
@@ -57,72 +55,57 @@
 </tr>
 
 <tr>
-    <td class="blue" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;"></td>
-    <td class="blue" style="border: 3px solid black; border-top: 5px solid black;"></td>
-    <td class="blue" style="border: 3px solid black; border-top: 5px solid black;"></td>
-    <td class="white" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;"></td>
-    <td class="white" style="border: 3px solid black; border-top: 5px solid black;"></td>
-    <td class="white" style="border: 3px solid black; border-top: 5px solid black;"></td>
-    <td class="green" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;"></td>
-    <td class="green" style="border: 3px solid black; border-top: 5px solid black;"></td>
-    <td class="green" style="border: 3px solid black; border-top: 5px solid black;"></td>
-    <td class="yellow" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;"></td>
-    <td class="yellow" style="border: 3px solid black; border-top: 5px solid black;"></td>
-    <td class="yellow" style="border: 3px solid black; border-right: 5px solid black; border-top: 5px solid black;"></td>
+    <td class="blue" id="a35" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;">B</td>
+    <td class="blue" id="a23" style="border: 3px solid black; border-top: 5px solid black;">B</td>
+    <td class="blue" id="a3" style="border: 3px solid black; border-top: 5px solid black;">B</td>
+    <td class="white" id="a1" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;">W</td>
+    <td class="white" id="a4" style="border: 3px solid black; border-top: 5px solid black;">W</td>
+    <td class="white" id="a6" style="border: 3px solid black; border-top: 5px solid black;">W</td>
+    <td class="green" id="a8" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;">G</td>
+    <td class="green" id="a26" style="border: 3px solid black; border-top: 5px solid black;">G</td>
+    <td class="green" id="a40" style="border: 3px solid black; border-top: 5px solid black;">G</td>
+    <td class="yellow" id="a41" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;">Y</td>
+    <td class="yellow" id="a38" style="border: 3px solid black; border-top: 5px solid black;">Y</td>
+    <td class="yellow" id="a36" style="border: 3px solid black; border-right: 5px solid black; border-top: 5px solid black;">Y</td>
 </tr>
 
 <tr>
-    <td class="blue" style="border: 3px solid black; border-left: 5px solid black;"></td>
-    <td class="blue" style="border: 3px solid black;"></td>
-    <td class="blue" style="border: 3px solid black;"></td>
-    <td class="white" style="border: 3px solid black; border-left: 5px solid black;"></td>
-    <td class="white" style="border: 3px solid black;"></td>
-    <td class="white" style="border: 3px solid black;"></td>
-    <td class="green" style="border: 3px solid black; border-left: 5px solid black;"></td>
-    <td class="green" style="border: 3px solid black;"></td>
-    <td class="green" style="border: 3px solid black;"></td>
-    <td class="yellow" style="border: 3px solid black; border-left: 5px solid black;"></td>
-    <td class="yellow" style="border: 3px solid black;"></td>
-    <td class="yellow" style="border: 3px solid black; border-right: 5px solid black;"></td>
+    <td class="blue" id="a42" style="border: 3px solid black; border-left: 5px solid black;">B</td>
+    <td class="blue" id="a27" style="border: 3px solid black;">B</td>
+    <td class="blue" id="a10" style="border: 3px solid black;">B</td>
+    <td class="white" id="a9" style="border: 3px solid black; border-left: 5px solid black;">W</td>
+    <td class="white" id="a11" style="border: 3px solid black;">W</td>
+    <td class="white" id="a12" style="border: 3px solid black;">W</td>
+    <td class="green" id="a13" style="border: 3px solid black; border-left: 5px solid black;">G</td>
+    <td class="green" id="a28" style="border: 3px solid black;">G</td>
+    <td class="green" id="a45" style="border: 3px solid black;">G</td>
+    <td class="yellow" id="a46" style="border: 3px solid black; border-left: 5px solid black;">Y</td>
+    <td class="yellow" id="a44" style="border: 3px solid black;">Y</td>
+    <td class="yellow" id="a43" style="border: 3px solid black; border-right: 5px solid black;">Y</td>
 </tr>
 
 <tr>
-    <td class="blue" style="border: 3px solid black; border-left: 5px solid black; border-bottom: 5px solid black;"></td>
-    <td class="blue" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
-    <td class="blue" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
-    <td class="white" style="border: 3px solid black; border-left: 5px solid black; border-bottom: 5px solid black;"></td>
-    <td class="white" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
-    <td class="white" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
-    <td class="green" style="border: 3px solid black; border-left: 5px solid black; border-bottom: 5px solid black;"></td>
-    <td class="green" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
-    <td class="green" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
-    <td class="yellow" style="border: 3px solid black; border-left: 5px solid black; border-bottom: 5px solid black;"></td>
-    <td class="yellow" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
-    <td class="yellow" style="border: 3px solid black; border-right: 5px solid black; border-bottom: 5px solid black;"></td>
-</tr>
-
-<tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td class="orange" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;"></td>
-    <td class="orange" style="border: 3px solid black; border-top: 5px solid black;"></td>
-    <td class="orange" style="border: 3px solid black; border-right: 5px solid black; border-top: 5px solid black;"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td class="blue" id="a47" style="border: 3px solid black; border-left: 5px solid black; border-bottom: 5px solid black;">B</td>
+    <td class="blue" id="a29" style="border: 3px solid black; border-bottom: 5px solid black;">B</td>
+    <td class="blue" id="a15" style="border: 3px solid black; border-bottom: 5px solid black;">B</td>
+    <td class="white" id="a14" style="border: 3px solid black; border-left: 5px solid black; border-bottom: 5px solid black;">W</td>
+    <td class="white" id="a17" style="border: 3px solid black; border-bottom: 5px solid black;">W</td>
+    <td class="white" id="a19" style="border: 3px solid black; border-bottom: 5px solid black;">W</td>
+    <td class="green" id="a20" style="border: 3px solid black; border-left: 5px solid black; border-bottom: 5px solid black;">G</td>
+    <td class="green" id="a32" style="border: 3px solid black; border-bottom: 5px solid black;">G</td>
+    <td class="green" id="a52" style="border: 3px solid black; border-bottom: 5px solid black;">G</td>
+    <td class="yellow" id="a54" style="border: 3px solid black; border-left: 5px solid black; border-bottom: 5px solid black;">Y</td>
+    <td class="yellow" id="a51" style="border: 3px solid black; border-bottom: 5px solid black;">Y</td>
+    <td class="yellow" id="a49" style="border: 3px solid black; border-right: 5px solid black; border-bottom: 5px solid black;">Y</td>
 </tr>
 
 <tr>
     <td></td>
     <td></td>
     <td></td>
-    <td class="orange" style="border: 3px solid black; border-left: 5px solid black;"></td>
-    <td class="orange" style="border: 3px solid black;"></td>
-    <td class="orange" style="border: 3px solid black; border-right: 5px solid black;"></td>
+    <td class="orange" id="a16" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;">O</td>
+    <td class="orange" id="a18" style="border: 3px solid black; border-top: 5px solid black;">O</td>
+    <td class="orange" id="a21" style="border: 3px solid black; border-right: 5px solid black; border-top: 5px solid black;">O</td>
     <td></td>
     <td></td>
     <td></td>
@@ -135,9 +118,24 @@
     <td></td>
     <td></td>
     <td></td>
-    <td class="orange" style="border: 3px solid black; border-bottom: 5px solid black; border-left: 5px solid black;"></td>
-    <td class="orange" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
-    <td class="orange" style="border: 3px solid black; border-bottom: 5px solid black; border-right: 5px solid black;"></td>
+    <td class="orange" id="a30" style="border: 3px solid black; border-left: 5px solid black;">O</td>
+    <td class="orange" id="a31" style="border: 3px solid black;">O</td>
+    <td class="orange" id="a33" style="border: 3px solid black; border-right: 5px solid black;">O</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="orange" id="a48" style="border: 3px solid black; border-bottom: 5px solid black; border-left: 5px solid black;">O</td>
+    <td class="orange" id="a50" style="border: 3px solid black; border-bottom: 5px solid black;">O</td>
+    <td class="orange" id="a53" style="border: 3px solid black; border-bottom: 5px solid black; border-right: 5px solid black;">O</td>
     <td></td>
     <td></td>
     <td></td>
@@ -149,18 +147,18 @@
 </table>
 
 <br>
-
-<button class="red" onClick="changeActiveColorToRed()">Red</button>
-&nbsp;
-<button class="blue" onClick="changeActiveColorToBlue()">Blue</button>
-&nbsp;
-<button class="white" onClick="changeActiveColorToWhite()">White</button>
-&nbsp;
-<button class="green" onClick="changeActiveColorToGreen()">Green</button>
-&nbsp;
-<button class="yellow" onClick="changeActiveColorToYellow()">Yellow</button>
-&nbsp;
-<button class="orange" onClick="changeActiveColorToOrange()">Orange</button>
+<button class="red_button" onClick="changeActiveColorToRed()">Red</button>
+<button class="blue_button" onClick="changeActiveColorToBlue()">Blue</button>
+<button class="white_button" onClick="changeActiveColorToWhite()">White</button>
+<button class="green_button" onClick="changeActiveColorToGreen()">Green</button>
+<button class="yellow_button" onClick="changeActiveColorToYellow()">Yellow</button>
+<button class="orange_button" onClick="changeActiveColorToOrange()">Orange</button>
+<br>
+<br>
+<br>
+<button onClick="checkNumbers()">Check</button>
+<br>
+<h1 id="errorMessage"></h1>
 
 </body>
 </html>

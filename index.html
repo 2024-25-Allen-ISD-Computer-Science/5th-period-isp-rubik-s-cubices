@@ -8,16 +8,26 @@
 <title>Rubik's Cube ISP</title>
 </head>
 
-<body>
+<body onload="loadFunction()">
+    <script src="script.js"></script>
 <table onclick="changeColor(event)">
 
 <tr>
     <td></td>
     <td></td>
     <td></td>
-    <td class="red" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;"></td>
-    <td class="red" style="border: 3px solid black; border-top: 5px solid black;"></td>
-    <td class="red" style="border: 3px solid black; border-right: 5px solid black; border-top: 5px solid black;"></td>
+    <td id="redoneone" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;">
+        <button class="turn" onClick="turnCubeUpOne()">Turn</button>
+&nbsp;
+    </td>
+    <td id="redonetwo" style="border: 3px solid black; border-top: 5px solid black;">
+        <button class="turn" onClick="turnCubeUpTwo()">Turn</button>
+&nbsp;
+    </td>
+    <td id="redonethree" style="border: 3px solid black; border-right: 5px solid black; border-top: 5px solid black;">
+        <button class="turn" onClick="turnCubeUpThree()">Turn</button>
+&nbsp;
+    </td>
     <td></td>
     <td></td>
     <td></td>
@@ -30,9 +40,9 @@
     <td></td>
     <td></td>
     <td></td>
-    <td class="red" style="border: 3px solid black; border-left: 5px solid black;"></td>
-    <td class="red" style="border: 3px solid black;"></td>
-    <td class="red" style="border: 3px solid black; border-right: 5px solid black;"></td>
+    <td id="redtwoone" style="border: 3px solid black; border-left: 5px solid black;"></td>
+    <td id="redtwotwo" style="border: 3px solid black;"></td>
+    <td id="redtwothree" style="border: 3px solid black; border-right: 5px solid black;"></td>
     <td></td>
     <td></td>
     <td></td>
@@ -45,9 +55,9 @@
     <td></td>
     <td></td>
     <td></td>
-    <td class="red" style="border: 3px solid black; border-bottom: 5px solid black; border-left: 5px solid black;"></td>
-    <td class="red" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
-    <td class="red" style="border: 3px solid black; border-bottom: 5px solid black; border-right: 5px solid black;"></td>
+    <td id="redthreeone" style="border: 3px solid black; border-bottom: 5px solid black; border-left: 5px solid black;"></td>
+    <td id="redthreetwo" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
+    <td id="redthreethree" style="border: 3px solid black; border-bottom: 5px solid black; border-right: 5px solid black;"></td>
     <td></td>
     <td></td>
     <td></td>
@@ -57,87 +67,113 @@
 </tr>
 
 <tr>
-    <td class="blue" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;"></td>
-    <td class="blue" style="border: 3px solid black; border-top: 5px solid black;"></td>
-    <td class="blue" style="border: 3px solid black; border-top: 5px solid black;"></td>
-    <td class="white" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;"></td>
-    <td class="white" style="border: 3px solid black; border-top: 5px solid black;"></td>
-    <td class="white" style="border: 3px solid black; border-top: 5px solid black;"></td>
-    <td class="green" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;"></td>
-    <td class="green" style="border: 3px solid black; border-top: 5px solid black;"></td>
-    <td class="green" style="border: 3px solid black; border-top: 5px solid black;"></td>
-    <td class="yellow" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;"></td>
-    <td class="yellow" style="border: 3px solid black; border-top: 5px solid black;"></td>
-    <td class="yellow" style="border: 3px solid black; border-right: 5px solid black; border-top: 5px solid black;"></td>
+    <td id="blueoneone" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;">
+        <button class="leftturn" onClick="turnCubeLeftOne()">Turn</button>
+&nbsp;
+    </td>
+    <td id="blueonetwo" style="border: 3px solid black; border-top: 5px solid black;"></td>
+    <td id="blueonethree" style="border: 3px solid black; border-top: 5px solid black;"></td>
+    <td id="whiteoneone" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;"></td>
+    <td id="whiteonetwo" style="border: 3px solid black; border-top: 5px solid black;"></td>
+    <td id="whiteonethree" style="border: 3px solid black; border-top: 5px solid black;"></td>
+    <td id="greenoneone" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;"></td>
+    <td id="greenonetwo" style="border: 3px solid black; border-top: 5px solid black;"></td>
+    <td id="greenonethree" style="border: 3px solid black; border-top: 5px solid black;"></td>
+    <td id="yellowoneone" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;"></td>
+    <td id="yellowonetwo" style="border: 3px solid black; border-top: 5px solid black;"></td>
+    <td id="yellowonethree" style="border: 3px solid black; border-right: 5px solid black; border-top: 5px solid black;"> 
+    <button id="rightturn" onClick="turnCubeRightOne()">Turn</button>
+&nbsp;</td>
 </tr>
 
 <tr>
-    <td class="blue" style="border: 3px solid black; border-left: 5px solid black;"></td>
-    <td class="blue" style="border: 3px solid black;"></td>
-    <td class="blue" style="border: 3px solid black;"></td>
-    <td class="white" style="border: 3px solid black; border-left: 5px solid black;"></td>
-    <td class="white" style="border: 3px solid black;"></td>
-    <td class="white" style="border: 3px solid black;"></td>
-    <td class="green" style="border: 3px solid black; border-left: 5px solid black;"></td>
-    <td class="green" style="border: 3px solid black;"></td>
-    <td class="green" style="border: 3px solid black;"></td>
-    <td class="yellow" style="border: 3px solid black; border-left: 5px solid black;"></td>
-    <td class="yellow" style="border: 3px solid black;"></td>
-    <td class="yellow" style="border: 3px solid black; border-right: 5px solid black;"></td>
+    <td id="bluetwoone" style="border: 3px solid black; border-left: 5px solid black;">
+        <button class="leftturn" onClick="turnCubeLeftTwo()">Turn</button>
+&nbsp;
+    </td>
+    <td id="bluetwotwo" style="border: 3px solid black;"></td>
+    <td id="bluetwothree" style="border: 3px solid black;"></td>
+    <td id="whitetwoone" style="border: 3px solid black; border-left: 5px solid black;"></td>
+    <td id="whitetwotwo" style="border: 3px solid black;"></td>
+    <td id="whitetwothree" style="border: 3px solid black;"></td>
+    <td id="greentwoone" style="border: 3px solid black; border-left: 5px solid black;"></td>
+    <td id="greentwotwo" style="border: 3px solid black;"></td>
+    <td id="greentwothree" style="border: 3px solid black;"></td>
+    <td id="yellowtwoone" style="border: 3px solid black; border-left: 5px solid black;"></td>
+    <td id="yellowtwotwo" style="border: 3px solid black;"></td>
+    <td id="yellowtwothree" style="border: 3px solid black; border-right: 5px solid black;">
+        <button class="rightturn" onClick="turnCubeRightTwo()">Turn</button>
+&nbsp;
+    </td>
 </tr>
 
 <tr>
-    <td class="blue" style="border: 3px solid black; border-left: 5px solid black; border-bottom: 5px solid black;"></td>
-    <td class="blue" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
-    <td class="blue" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
-    <td class="white" style="border: 3px solid black; border-left: 5px solid black; border-bottom: 5px solid black;"></td>
-    <td class="white" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
-    <td class="white" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
-    <td class="green" style="border: 3px solid black; border-left: 5px solid black; border-bottom: 5px solid black;"></td>
-    <td class="green" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
-    <td class="green" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
-    <td class="yellow" style="border: 3px solid black; border-left: 5px solid black; border-bottom: 5px solid black;"></td>
-    <td class="yellow" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
-    <td class="yellow" style="border: 3px solid black; border-right: 5px solid black; border-bottom: 5px solid black;"></td>
-</tr>
-
-<tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td class="orange" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;"></td>
-    <td class="orange" style="border: 3px solid black; border-top: 5px solid black;"></td>
-    <td class="orange" style="border: 3px solid black; border-right: 5px solid black; border-top: 5px solid black;"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-</tr>
-
-<tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td class="orange" style="border: 3px solid black; border-left: 5px solid black;"></td>
-    <td class="orange" style="border: 3px solid black;"></td>
-    <td class="orange" style="border: 3px solid black; border-right: 5px solid black;"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td id="bluethreeone" style="border: 3px solid black; border-left: 5px solid black; border-bottom: 5px solid black;">
+        <button class="leftturn" onClick="turnCubeLeftThree()">Turn</button>
+&nbsp;
+    </td>
+    <td id="bluethreetwo" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
+    <td id="bluethreethree" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
+    <td id="whitethreeone" style="border: 3px solid black; border-left: 5px solid black; border-bottom: 5px solid black;"></td>
+    <td id="whitethreetwo" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
+    <td id="whitethreethree" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
+    <td id="greenthreeone" style="border: 3px solid black; border-left: 5px solid black; border-bottom: 5px solid black;"></td>
+    <td id="greenthreetwo" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
+    <td id="greenthreethree" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
+    <td id="yellowthreeone" style="border: 3px solid black; border-left: 5px solid black; border-bottom: 5px solid black;"></td>
+    <td id="yellowthreetwo" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
+    <td id="yellowthreethree" style="border: 3px solid black; border-right: 5px solid black; border-bottom: 5px solid black;">
+        <button class="rightturn" onClick="turnCubeRightThree()">Turn</button>
+&nbsp;
+    </td>
 </tr>
 
 <tr>
     <td></td>
     <td></td>
     <td></td>
-    <td class="orange" style="border: 3px solid black; border-bottom: 5px solid black; border-left: 5px solid black;"></td>
-    <td class="orange" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
-    <td class="orange" style="border: 3px solid black; border-bottom: 5px solid black; border-right: 5px solid black;"></td>
+    <td id="orangeoneone" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;"></td>
+    <td id="orangeonetwo" style="border: 3px solid black; border-top: 5px solid black;"></td>
+    <td id="orangeonethree" style="border: 3px solid black; border-right: 5px solid black; border-top: 5px solid black;"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td id="orangetwoone" style="border: 3px solid black; border-left: 5px solid black;"></td>
+    <td id="orangetwotwo" style="border: 3px solid black;"></td>
+    <td id="orangetwothree" style="border: 3px solid black; border-right: 5px solid black;"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td id="orangethreeone" style="border: 3px solid black; border-bottom: 5px solid black; border-left: 5px solid black;">
+        <button class="downturn" onClick="turnCubeDownOne()">Turn</button>
+&nbsp;
+    </td>
+    <td id="orangethreetwo" style="border: 3px solid black; border-bottom: 5px solid black;">
+        <button class="downturn" onClick="turnCubeDownTwo()">Turn</button>
+&nbsp;
+    </td>
+    <td id="orangethreethree" style="border: 3px solid black; border-bottom: 5px solid black; border-right: 5px solid black;">
+        <button class="downturn" onClick="turnCubeDownThree()">Turn</button>
+&nbsp;
+    </td>
     <td></td>
     <td></td>
     <td></td>

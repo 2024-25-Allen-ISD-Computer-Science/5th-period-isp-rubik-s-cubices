@@ -64,3 +64,12 @@ td {
     
     background-color: orange;
 }
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #8fcaf5;
+    width: 100px;
+    height:100px;
+    display: block;
+}

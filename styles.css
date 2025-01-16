@@ -37,7 +37,7 @@ body {
   width                : 350px;
   height               : 350px;
   position             : absolute;
-  background           : #fff;
+  background           : #000000;
   display              : grid;
   grid-template-columns: repeat(auto-fill, minmax(calc(350px /4), 1fr));
   gap                  : 4px;
@@ -91,20 +91,7 @@ body {
   background-size: 100%;
 }
 
-.box div>span::before {
-  content        : "";
-  position       : absolute;
-  top            : 50%;
-  left           : 50%;
-  transform      : translate(-50%, -50%);
-  width          : 60px;
-  height         : 60px;
-  border-radius  : 50%;
-  backdrop-filter: blur(5px);
-  background     : linear-gradient(to bottom right, var(--clr) 60%, #bfbfbf);
-  box-shadow     : -10px -20px 30px rgba(0, 0, 0, 0.2);
-  z-index        : -1;
-}
+
 
 .box div>span::after {
   content        : "";

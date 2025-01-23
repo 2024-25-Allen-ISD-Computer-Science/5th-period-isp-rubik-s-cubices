@@ -1,116 +1,116 @@
-* {
-  margin    : 0;
-  padding   : 0;
-  box-sizing: border-box;
+html, body {
+  height: 100%;
+  overflow: hidden;
+  background: radial-gradient(circle, white, rgba(0, 0, 0, 0.5));
+  background-color: #2F2F31;
+  background-blend-mode: overlay;
 }
 
-body {
-  width     : 100%;
-  min-height: 100vh;
-  background: linear-gradient(to bottom right, rgb(31, 0, 188), rgb(0, 157, 255));
-  overflow  : hidden;
-  cursor    : move;
+.credits {
+  width: 100%;
+  top: 90%;
 }
 
-.container {
-  width          : 600px;
-  height         : 600px;
-  position       : absolute;
-  top            : 50%;
-  left           : 50%;
-  transform      : translate(-50%, -50%);
-  display        : flex;
-  justify-content: center;
-  align-items    : center;
-  perspective    : 2000px;
-}
-
-.box {
-  position       : absolute;
-  width          : 350px;
-  height         : 350px;
-  transform-style: preserve-3d;
-  transition     : all 1s ease-out;
-}
-
-.box div {
-  width                : 350px;
-  height               : 350px;
-  position             : absolute;
-  background           : #000000;
-  display              : grid;
-  grid-template-columns: repeat(auto-fill, minmax(calc(350px /4), 1fr));
-  gap                  : 4px;
-  padding              : 4px;
-
-}
-
-.top {
-  bottom   : 175px;
-  transform: rotateX(90deg);
-}
-
-.bottom {
-  top      : 175px;
-  transform: rotateX(-90deg);
-}
-
-.left {
-  right    : 175px;
-  transform: rotateY(-90deg)
-}
-
-.right {
-  left     : 175px;
-  transform: rotateY(90deg)
-}
-
-.front {
-  transform: translateZ(175px)
-}
-
-.back {
-  transform: translateZ(-175px)
-}
-
-
-.box div span {
-  height         : calc(350px / 3 -6px);
-  background     : var(--clr);
-  border-radius  : 10px;
-  position       : relative;
-  z-index        : -1;
-  overflow       : hidden;
-  text-align     : center;
-  overflow       : hidden;
-  display        : flex;
-  justify-content: center;
-  align-items    : center;
-  color          : #fff;
-  font-size      : 2rem;
-  background-size: 100%;
-}
-
-
-
-.box div>span::after {
-  content        : "";
-  position       : absolute;
-  width          : 350px;
-  height         : 350px;
-  top            : 0;
-  left           : 0;
-  background     : linear-gradient(#ffffff44 50%, transparent 50%);
-  z-index        : -1;
-  backdrop-filter: blur(2px);
-  transform      : rotate(-40deg);
-}
-
-.nameLetters {
-  font-size     : 3.5rem !important;
-  font-weight   : 700;
-  z-index       : 10000 !important;
-  font-family   : sans-serif;
-  user-select   : none;
+.text {
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 0.8rem;
+  color: grey;
   pointer-events: none;
+}
+
+.centered, .cube > .piece > .element > .sticker {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.scene {
+  width: 100%;
+  height: 100%;
+  perspective: 1200px;
+  transform-style: preserve-3d;
+}
+.scene > .pivot {
+  width: 0;
+  height: 0;
+  transition: 0.18s;
+}
+.scene .anchor {
+  width: 2em;
+  height: 6em;
+}
+.scene div {
+  position: absolute;
+  transform-style: inherit;
+}
+
+#piece4 > .element.top > .sticker {
+  background-image: URL("https://i.pinimg.com/originals/5a/74/35/5a74355a6f045d6a81fe506a80d67f7d.png");
+  background-size: cover;
+}
+
+.cube {
+  font-size: 190%;
+  margin-left: -1em;
+  margin-top: -1em;
+}
+.cube > .piece {
+  width: 1.9em;
+  height: 1.9em;
+}
+.cube > .piece > .element {
+  width: 100%;
+  height: 100%;
+  background: #0A0A0A;
+  outline: 1px solid transparent;
+  border: 0.05em solid #0A0A0A;
+  border-radius: 10%;
+}
+.cube > .piece > .element.left {
+  transform: rotateX(0deg) rotateY(-90deg) rotateZ(180deg) translateZ(1em);
+}
+.cube > .piece > .element.right {
+  transform: rotateX(0deg) rotateY(90deg) rotateZ(90deg) translateZ(1em);
+}
+.cube > .piece > .element.back {
+  transform: rotateX(0deg) rotateY(180deg) rotateZ(-90deg) translateZ(1em);
+}
+.cube > .piece > .element.front {
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateZ(1em);
+}
+.cube > .piece > .element.bottom {
+  transform: rotateX(-90deg) rotateY(0deg) rotateZ(-90deg) translateZ(1em);
+}
+.cube > .piece > .element.top {
+  transform: rotateX(90deg) rotateY(0deg) rotateZ(180deg) translateZ(1em);
+}
+.cube > .piece > .element > .sticker {
+  transform: translateZ(2px);
+  width: 95%;
+  height: 95%;
+  border-radius: 10%;
+  outline: 1px solid transparent;
+  box-shadow: inset 0.05em 0.05em 0.2rem 0 rgba(255, 255, 255, 0.25), inset -0.05em -0.05em 0.2rem 0 rgba(0, 0, 0, 0.25);
+}
+.cube > .piece > .element > .sticker.blue {
+  background-color: #001ca8;
+}
+.cube > .piece > .element > .sticker.green {
+  background-color: #006E16;
+}
+.cube > .piece > .element > .sticker.white {
+  background-color: #DDD;
+}
+.cube > .piece > .element > .sticker.yellow {
+  background-color: #E0AE00;
+}
+.cube > .piece > .element > .sticker.orange {
+  background-color: #FF5000;
+}
+.cube > .piece > .element > .sticker.red {
+  background-color: #DF0500;
 }

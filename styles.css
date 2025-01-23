@@ -67,9 +67,10 @@ td {
 
 .logo-container {
     text-align: center;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
     background-color: #8fcaf5;
+    padding: 20px;
+    border-radius: 10px;
     width: 100px;
     height:100px;
-    display: block;
 }

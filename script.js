@@ -97,7 +97,7 @@ function changeColor(event) {
         event.target.style.backgroundColor = activeColor;
     }
 }
-function turnCubeLeftOne(){
+function turnCubeU(){
     
     var blueBackground = document.getElementById('blueoneone').style.backgroundColor;
     var blueBackgroundTwo = document.getElementById('blueonetwo').style.backgroundColor;
@@ -153,7 +153,7 @@ function turnCubeLeftOne(){
     
 }
 
-function turnCubeLeftTwo(){
+function turnCubeEP(){
     
     var blueBackground = document.getElementById('bluetwoone').style.backgroundColor;
     var blueBackgroundTwo = document.getElementById('bluetwotwo').style.backgroundColor;
@@ -209,7 +209,7 @@ function turnCubeLeftTwo(){
     
 }
 
-function turnCubeLeftThree(){
+function turnCubeDP(){
     
     var blueBackground = document.getElementById('bluethreeone').style.backgroundColor;
     var blueBackgroundTwo = document.getElementById('bluethreetwo').style.backgroundColor;
@@ -265,7 +265,7 @@ function turnCubeLeftThree(){
     
 }
 
-function turnCubeRightOne(){
+function turnCubeUP(){
     
     var yellowBackground = document.getElementById('yellowoneone').style.backgroundColor;
     var yellowBackgroundTwo = document.getElementById('yellowonetwo').style.backgroundColor;
@@ -321,7 +321,7 @@ function turnCubeRightOne(){
     
 }
 
-function turnCubeRightTwo(){
+function turnCubeE(){
     
     var yellowBackground = document.getElementById('yellowtwoone').style.backgroundColor;
     var yellowBackgroundTwo = document.getElementById('yellowtwotwo').style.backgroundColor;
@@ -377,7 +377,7 @@ function turnCubeRightTwo(){
     
 }
 
-function turnCubeRightThree(){
+function turnCubeD(){
     
     var yellowBackground = document.getElementById('yellowthreeone').style.backgroundColor;
     var yellowBackgroundTwo = document.getElementById('yellowthreetwo').style.backgroundColor;
@@ -434,7 +434,7 @@ function turnCubeRightThree(){
 }
    
 
-function turnCubeUpOne(){
+function turnCubeLP(){
     
     var yellowBackground = document.getElementById('yellowonethree').style.backgroundColor;
     var yellowBackgroundTwo = document.getElementById('yellowtwothree').style.backgroundColor;
@@ -491,7 +491,7 @@ function turnCubeUpOne(){
     
 }
 
-function turnCubeUpTwo(){
+function turnCubeMP(){
     
     var yellowBackground = document.getElementById('yellowonetwo').style.backgroundColor;
     var yellowBackgroundTwo = document.getElementById('yellowtwotwo').style.backgroundColor;
@@ -546,7 +546,7 @@ function turnCubeUpTwo(){
     document.getElementById('orangethreetwo').style.backgroundColor = yellowBackgroundThree;
 }
 
-function turnCubeUpThree(){
+function turnCubeR(){
     
     var yellowBackground = document.getElementById('yellowoneone').style.backgroundColor;
     var yellowBackgroundTwo = document.getElementById('yellowtwoone').style.backgroundColor;
@@ -602,7 +602,7 @@ function turnCubeUpThree(){
 }
 
 
-function turnCubeDownOne(){
+function turnCubeL(){
     
     var yellowBackground = document.getElementById('yellowonethree').style.backgroundColor;
     var yellowBackgroundTwo = document.getElementById('yellowtwothree').style.backgroundColor;
@@ -658,13 +658,44 @@ function turnCubeDownOne(){
     
 }
 
-function turnCubeDownTwo(){
+function turnCubeM(){
     
 }
 
-function turnCubeDownThree(){
+function turnCubeRP(){
     
 }
+
+document.addEventListener("keydown", (event) => {
+  
+  const isShiftPressed = event.shiftKey;
+  
+  const key = event.key.toUpperCase();
+
+  switch (key) {
+    case "U":
+      isShiftPressed ? turnCubeUP() : turnCubeU();
+      break;
+    case "E":
+      isShiftPressed ? turnCubeEP() : turnCubeE();
+      break;
+    case "D":
+      isShiftPressed ? turnCubeDP() : turnCubeD();
+      break;
+    case "R":
+      isShiftPressed ? turnCubeRP() : turnCubeR();
+      break;
+    case "L":
+      isShiftPressed ? turnCubeLP() : turnCubeL();
+      break;
+    case "M":
+      isShiftPressed ? turnCubeMP() : turnCubeM();
+      break;
+    default:
+      break;
+  }
+});
+ 
 
 const rubiksCube = [
     ['W','R','B'],

@@ -13,16 +13,17 @@ body {
   }
 
   button {
-    border: #000 solid 3px;
+    border: #000 solid 2px;
     color: white;
     text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
-    border-radius: 10px;
+    border-radius: 8px;
+    padding: 8px 16px;
     display: inline-block;
-    transition-duration: 0.3s;
+    transition: all 0.3s ease;
   }
 
   button:hover {
@@ -36,8 +37,9 @@ table {
 }
 
 td {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
+    transition: background-color 0.3s ease;
 }
 
 .red {
@@ -67,10 +69,11 @@ td {
 
 .logo-container {
     text-align: center;
-    margin: 0 auto 20px auto;
-    background-color: #8fcaf5;
-    padding: 20px;
-    border-radius: 10px;
-    width: 100px;
+    margin: 0 auto 30px auto;
+    background-color: linear-gradient(145deg, #9ed5ff, #7fbae6);
+    padding: 25px;
+    border-radius: 15px;
+    width: 300px;
     height:100px;
+    box-shadow: 0 4px 6px rgba (0, 0, 0, 0.1);
 }

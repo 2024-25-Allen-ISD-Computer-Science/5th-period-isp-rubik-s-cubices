@@ -389,14 +389,35 @@ function rotateFromKeyPress(event) {
       case "L":
         animateRotation(5, false, Date.now());
         break;
+      case "m":
+        animateRotation(4, true, Date.now());
+        animateRotation(5, false, Date.now());
+        break;
+      case "M":
+        animateRotation(4, false, Date.now());
+        animateRotation(5, true, Date.now());
+        break;
+      case "e":
+        animateRotation(0, true, Date.now());
+        animateRotation(1, false, Date.now());
+        break;
+      case "E":
+        animateRotation(0, false, Date.now());
+        animateRotation(1, true, Date.now());
+        break;
+      case "s":
+        animateRotation(2, true, Date.now());
+        animateRotation(3, false, Date.now());
+        break;
+      case "S":
+        animateRotation(2, false, Date.now());
+        animateRotation(3, true, Date.now());
+        break;
       default:
     }
 }
 
-
 window.addEventListener("keydown", rotateFromKeyPress);
-
-  
   
       </script>
   

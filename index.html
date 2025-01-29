@@ -1,206 +1,407 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<link rel="stylesheet" href="styles.css">
-
-<script src="script.js"></script>
-
-<title>Rubik's Cube ISP</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubik's Cubicles ISP</title>
 </head>
 
-<body onload="loadFunction()">
-    <script src="script.js"></script>
-<table onclick="changeColor(event)">
+<script>
+    window.console = window.console || function(t) {};
+  </script>
+  
+    
+    
+    <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
+  
+  
+  </head>
+  
+  <body translate="no" >
+    <div class="scene" id="scene">
+    <div class="pivot centered" id="pivot" style="transform: rotateX(-35deg) rotateY(-135deg);">
+      <div class="cube" id="cube">
+        <div class="piece">
+          <div class="element left"></div>
+          <div class="element right"></div>
+          <div class="element top"></div>
+          <div class="element bottom"></div>
+          <div class="element back"></div>
+          <div class="element front"></div>
+        </div>
+        <div class="piece">
+          <div class="element left"></div>
+          <div class="element right"></div>
+          <div class="element top"></div>
+          <div class="element bottom"></div>
+          <div class="element back"></div>
+          <div class="element front"></div>
+        </div>
+        <div class="piece">
+          <div class="element left"></div>
+          <div class="element right"></div>
+          <div class="element top"></div>
+          <div class="element bottom"></div>
+          <div class="element back"></div>
+          <div class="element front"></div>
+        </div>
+        <div class="piece">
+          <div class="element left"></div>
+          <div class="element right"></div>
+          <div class="element top"></div>
+          <div class="element bottom"></div>
+          <div class="element back"></div>
+          <div class="element front"></div>
+        </div>
+        <div class="piece">
+          <div class="element left"></div>
+          <div class="element right"></div>
+          <div class="element top"></div>
+          <div class="element bottom"></div>
+          <div class="element back"></div>
+          <div class="element front"></div>
+        </div>
+        <div class="piece">
+          <div class="element left"></div>
+          <div class="element right"></div>
+          <div class="element top"></div>
+          <div class="element bottom"></div>
+          <div class="element back"></div>
+          <div class="element front"></div>
+        </div>
+        <div class="piece">
+          <div class="element left"></div>
+          <div class="element right"></div>
+          <div class="element top"></div>
+          <div class="element bottom"></div>
+          <div class="element back"></div>
+          <div class="element front"></div>
+        </div>
+        <div class="piece">
+          <div class="element left"></div>
+          <div class="element right"></div>
+          <div class="element top"></div>
+          <div class="element bottom"></div>
+          <div class="element back"></div>
+          <div class="element front"></div>
+        </div>
+        <div class="piece">
+          <div class="element left"></div>
+          <div class="element right"></div>
+          <div class="element top"></div>
+          <div class="element bottom"></div>
+          <div class="element back"></div>
+          <div class="element front"></div>
+        </div>
+        <div class="piece">
+          <div class="element left"></div>
+          <div class="element right"></div>
+          <div class="element top"></div>
+          <div class="element bottom"></div>
+          <div class="element back"></div>
+          <div class="element front"></div>
+        </div>
+        <div class="piece">
+          <div class="element left"></div>
+          <div class="element right"></div>
+          <div class="element top"></div>
+          <div class="element bottom"></div>
+          <div class="element back"></div>
+          <div class="element front"></div>
+        </div>
+        <div class="piece">
+          <div class="element left"></div>
+          <div class="element right"></div>
+          <div class="element top"></div>
+          <div class="element bottom"></div>
+          <div class="element back"></div>
+          <div class="element front"></div>
+        </div>
+        <div class="piece">
+          <div class="element left"></div>
+          <div class="element right"></div>
+          <div class="element top"></div>
+          <div class="element bottom"></div>
+          <div class="element back"></div>
+          <div class="element front"></div>
+        </div>
+        <div class="piece">
+          <div class="element left"></div>
+          <div class="element right"></div>
+          <div class="element top"></div>
+          <div class="element bottom"></div>
+          <div class="element back"></div>
+          <div class="element front"></div>
+        </div>
+        <div class="piece">
+          <div class="element left"></div>
+          <div class="element right"></div>
+          <div class="element top"></div>
+          <div class="element bottom"></div>
+          <div class="element back"></div>
+          <div class="element front"></div>
+        </div>
+        <div class="piece">
+          <div class="element left"></div>
+          <div class="element right"></div>
+          <div class="element top"></div>
+          <div class="element bottom"></div>
+          <div class="element back"></div>
+          <div class="element front"></div>
+        </div>
+        <div class="piece">
+          <div class="element left"></div>
+          <div class="element right"></div>
+          <div class="element top"></div>
+          <div class="element bottom"></div>
+          <div class="element back"></div>
+          <div class="element front"></div>
+        </div>
+        <div class="piece">
+          <div class="element left"></div>
+          <div class="element right"></div>
+          <div class="element top"></div>
+          <div class="element bottom"></div>
+          <div class="element back"></div>
+          <div class="element front"></div>
+        </div>
+        <div class="piece">
+          <div class="element left"></div>
+          <div class="element right"></div>
+          <div class="element top"></div>
+          <div class="element bottom"></div>
+          <div class="element back"></div>
+          <div class="element front"></div>
+        </div>
+        <div class="piece">
+          <div class="element left"></div>
+          <div class="element right"></div>
+          <div class="element top"></div>
+          <div class="element bottom"></div>
+          <div class="element back"></div>
+          <div class="element front"></div>
+        </div>
+        <div class="piece">
+          <div class="element left"></div>
+          <div class="element right"></div>
+          <div class="element top"></div>
+          <div class="element bottom"></div>
+          <div class="element back"></div>
+          <div class="element front"></div>
+        </div>
+        <div class="piece">
+          <div class="element left"></div>
+          <div class="element right"></div>
+          <div class="element top"></div>
+          <div class="element bottom"></div>
+          <div class="element back"></div>
+          <div class="element front"></div>
+        </div>
+        <div class="piece">
+          <div class="element left"></div>
+          <div class="element right"></div>
+          <div class="element top"></div>
+          <div class="element bottom"></div>
+          <div class="element back"></div>
+          <div class="element front"></div>
+        </div>
+        <div class="piece">
+          <div class="element left"></div>
+          <div class="element right"></div>
+          <div class="element top"></div>
+          <div class="element bottom"></div>
+          <div class="element back"></div>
+          <div class="element front"></div>
+        </div>
+        <div class="piece">
+          <div class="element left"></div>
+          <div class="element right"></div>
+          <div class="element top"></div>
+          <div class="element bottom"></div>
+          <div class="element back"></div>
+          <div class="element front"></div>
+        </div>
+        <div class="piece">
+          <div class="element left"></div>
+          <div class="element right"></div>
+          <div class="element top"></div>
+          <div class="element bottom"></div>
+          <div class="element back"></div>
+          <div class="element front"></div>
+        </div>
+      </div>
+    </div>
+    <div class="credits">
+      <div class="text" id="pos" style="position: initial">Rubik's cube</div>
+    </div>
+  </div>
+  <div id="guide">
+    <div class="anchor" id="anchor3" style="transform: translateZ(3px) translateY(-33.33%) rotate(-270deg) translateY(66.67%)"></div>
+    <div class="anchor" id="anchor2" style="transform: translateZ(3px) translateY(-33.33%) rotate(-180deg) translateY(66.67%)"></div>
+    <div class="anchor" id="anchor1" style="transform: translateZ(3px) translateY(-33.33%) rotate(-90deg) translateY(66.67%)"></div>
+    <div class="anchor" id="anchor0" style="transform: translateZ(3px) translateY(-33.33%) rotate(0deg) translateY(66.67%)"></div>
+  </div>
+   
+        <script id="rendered-js" >
+  var colors = ['blue', 'green', 'white', 'yellow', 'orange', 'red'],
+  pieces = document.getElementsByClassName('piece');
+  
+  // Returns j-th adjacent face of i-th face
+  function mx(i, j) {
+    return ([2, 4, 3, 5][j % 4 | 0] + i % 2 * ((j | 0) % 4 * 2 + 3) + 2 * (i / 2 | 0)) % 6;
+  }
+  
+  function getAxis(face) {
+    return String.fromCharCode('X'.charCodeAt(0) + face / 2); // X, Y or Z
+  }
+  
+  // Moves each of 26 pieces to their places, assigns IDs and attaches stickers
+  function assembleCube() {
+    function moveto(face) {
+      id = id + (1 << face);
+      pieces[i].children[face].appendChild(document.createElement('div')).
+      setAttribute('class', 'sticker ' + colors[face]);
+      return 'translate' + getAxis(face) + '(' + (face % 2 * 4 - 2) + 'em)';
+    }
+    for (var id, x, i = 0; id = 0, i < 26; i++) {
+      x = mx(i, i % 18);
+      pieces[i].style.transform = 'rotateX(0deg)' + moveto(i % 6) + (
+      i > 5 ? moveto(x) + (i > 17 ? moveto(mx(x, x + 2)) : '') : '');
+      pieces[i].setAttribute('id', 'piece' + id);
+    }
+  }
+  
+  function getPieceBy(face, index, corner) {
+    return document.getElementById('piece' + (
+    (1 << face) + (1 << mx(face, index)) + (1 << mx(face, index + 1)) * corner));
+  }
+  
+  // Swaps stickers of the face (by clockwise) stated times, thereby rotates the face
+  function swapPieces(face, times) {
+    for (var i = 0; i < 6 * times; i++) {
+      var piece1 = getPieceBy(face, i / 2, i % 2),
+      piece2 = getPieceBy(face, i / 2 + 1, i % 2);
+      for (var j = 0; j < 5; j++) {
+        var sticker1 = piece1.children[j < 4 ? mx(face, j) : face].firstChild,
+        sticker2 = piece2.children[j < 4 ? mx(face, j + 1) : face].firstChild,
+        className = sticker1 ? sticker1.className : '';
+        if (className)
+        sticker1.className = sticker2.className,
+        sticker2.className = className;
+      }
+    }
+  }
+  
+  // Animates rotation of the face (by clockwise if cw), and then swaps stickers
+  function animateRotation(face, cw, currentTime) {
+    var k = .3 * (face % 2 * 2 - 1) * (2 * cw - 1),
+    qubes = Array(9).fill(pieces[face]).map(function (value, index) {
+      return index ? getPieceBy(face, index / 2, index % 2) : value;
+    });
+    (function rotatePieces() {
+      var passed = Date.now() - currentTime,
+      style = 'rotate' + getAxis(face) + '(' + k * passed * (passed < 300) + 'deg)';
+      qubes.forEach(function (piece) {
+        piece.style.transform = piece.style.transform.replace(/rotate.\(\S+\)/, style);
+      });
+      if (passed >= 300)
+      return swapPieces(face, 3 - 2 * cw);
+      requestAnimationFrame(rotatePieces);
+    })();
+  }
+  
+  // Events
+  function mousedown(md_e) {
+    var startXY = pivot.style.transform.match(/-?\d+\.?\d*/g).map(Number),
+    element = md_e.target.closest('.element'),
+    face = [].indexOf.call((element || cube).parentNode.children, element);
+    function mousemove(mm_e) {
+      if (element) {
+        var gid = /\d/.exec(document.elementFromPoint(mm_e.pageX, mm_e.pageY).id);
+        if (gid && gid.input.includes('anchor')) {
+          mouseup();
+          var e = element.parentNode.children[mx(face, Number(gid) + 3)].hasChildNodes();
+          animateRotation(mx(face, Number(gid) + 1 + 2 * e), e, Date.now());
+        }
+      } else pivot.style.transform =
+      'rotateX(' + (startXY[0] - (mm_e.pageY - md_e.pageY) / 2) + 'deg)' +
+      'rotateY(' + (startXY[1] + (mm_e.pageX - md_e.pageX) / 2) + 'deg)';
+    }
+    function mouseup() {
+      document.body.appendChild(guide);
+      scene.removeEventListener('mousemove', mousemove);
+      document.removeEventListener('mouseup', mouseup);
+      scene.addEventListener('mousedown', mousedown);
+    }
+  
+    (element || document.body).appendChild(guide);
+    scene.addEventListener('mousemove', mousemove);
+    document.addEventListener('mouseup', mouseup);
+    scene.removeEventListener('mousedown', mousedown);
+  }
+  
+  document.ondragstart = function () {return false;};
+  window.addEventListener('load', assembleCube);
+  scene.addEventListener('mousedown', mousedown);
+  
+function rotateFromKeyPress(event) {
+    switch (event.key) {
+      case "u":
+        animateRotation(0, true, Date.now());
+        break;
+      case "U":
+        animateRotation(0, false, Date.now());
+        break;
+      case "d":
+        animateRotation(1, true, Date.now());
+        break;
+      case "D":
+        animateRotation(1, false, Date.now());
+        break;
+      case "f":
+        animateRotation(2, true, Date.now());
+        break;
+      case "F":
+        animateRotation(2, false, Date.now());
+        break;
+      case "b":
+        animateRotation(3, true, Date.now());
+        break;
+      case "B":
+        animateRotation(3, false, Date.now());
+        break;
+      case "r":
+        animateRotation(4, true, Date.now());
+        break;
+      case "R":
+        animateRotation(4, false, Date.now());
+        break;
+      case "l":
+        animateRotation(5, true, Date.now());
+        break;
+      case "L":
+        animateRotation(5, false, Date.now());
+        break;
+      default:
+    }
+}
 
-<div class="logo-container">
-    <h1> Rubik's Cube Solver</h1>
-</div>
 
-<tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td id="redoneone" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;">
-        <button class="turn" onClick="turnCubeLP()">L'</button>
-&nbsp;
-    </td>
-    <td id="redonetwo" style="border: 3px solid black; border-top: 5px solid black;">
-        <button class="turn" onClick="turnCubeMP()">M'</button>
-&nbsp;
-    </td>
-    <td id="redonethree" style="border: 3px solid black; border-right: 5px solid black; border-top: 5px solid black;">
-        <button class="turn" onClick="turnCubeR()">R</button>
-&nbsp;
-    </td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-</tr>
+window.addEventListener("keydown", rotateFromKeyPress);
 
-<tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td id="redtwoone" style="border: 3px solid black; border-left: 5px solid black;"></td>
-    <td id="redtwotwo" style="border: 3px solid black;"></td>
-    <td id="redtwothree" style="border: 3px solid black; border-right: 5px solid black;"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-</tr>
-
-<tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td id="redthreeone" style="border: 3px solid black; border-bottom: 5px solid black; border-left: 5px solid black;"></td>
-    <td id="redthreetwo" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
-    <td id="redthreethree" style="border: 3px solid black; border-bottom: 5px solid black; border-right: 5px solid black;"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-</tr>
-
-<tr>
-    <td id="blueoneone" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;">
-        <button class="leftturn" onClick="turnCubeU()">U</button>
-&nbsp;
-    </td>
-    <td id="blueonetwo" style="border: 3px solid black; border-top: 5px solid black;"></td>
-    <td id="blueonethree" style="border: 3px solid black; border-top: 5px solid black;"></td>
-    <td id="whiteoneone" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;"></td>
-    <td id="whiteonetwo" style="border: 3px solid black; border-top: 5px solid black;"></td>
-    <td id="whiteonethree" style="border: 3px solid black; border-top: 5px solid black;"></td>
-    <td id="greenoneone" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;"></td>
-    <td id="greenonetwo" style="border: 3px solid black; border-top: 5px solid black;"></td>
-    <td id="greenonethree" style="border: 3px solid black; border-top: 5px solid black;"></td>
-    <td id="yellowoneone" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;"></td>
-    <td id="yellowonetwo" style="border: 3px solid black; border-top: 5px solid black;"></td>
-    <td id="yellowonethree" style="border: 3px solid black; border-right: 5px solid black; border-top: 5px solid black;"> 
-    <button id="rightturn" onClick="turnCubeUP()">U'</button>
-&nbsp;</td>
-</tr>
-
-<tr>
-    <td id="bluetwoone" style="border: 3px solid black; border-left: 5px solid black;">
-        <button class="leftturn" onClick="turnCubeEP()">E'</button>
-&nbsp;
-    </td>
-    <td id="bluetwotwo" style="border: 3px solid black;"></td>
-    <td id="bluetwothree" style="border: 3px solid black;"></td>
-    <td id="whitetwoone" style="border: 3px solid black; border-left: 5px solid black;"></td>
-    <td id="whitetwotwo" style="border: 3px solid black;"></td>
-    <td id="whitetwothree" style="border: 3px solid black;"></td>
-    <td id="greentwoone" style="border: 3px solid black; border-left: 5px solid black;"></td>
-    <td id="greentwotwo" style="border: 3px solid black;"></td>
-    <td id="greentwothree" style="border: 3px solid black;"></td>
-    <td id="yellowtwoone" style="border: 3px solid black; border-left: 5px solid black;"></td>
-    <td id="yellowtwotwo" style="border: 3px solid black;"></td>
-    <td id="yellowtwothree" style="border: 3px solid black; border-right: 5px solid black;">
-        <button class="rightturn" onClick="turnCubeE()">E</button>
-&nbsp;
-    </td>
-</tr>
-
-<tr>
-    <td id="bluethreeone" style="border: 3px solid black; border-left: 5px solid black; border-bottom: 5px solid black;">
-        <button class="leftturn" onClick="turnCubeDP()">D'</button>
-&nbsp;
-    </td>
-    <td id="bluethreetwo" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
-    <td id="bluethreethree" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
-    <td id="whitethreeone" style="border: 3px solid black; border-left: 5px solid black; border-bottom: 5px solid black;"></td>
-    <td id="whitethreetwo" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
-    <td id="whitethreethree" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
-    <td id="greenthreeone" style="border: 3px solid black; border-left: 5px solid black; border-bottom: 5px solid black;"></td>
-    <td id="greenthreetwo" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
-    <td id="greenthreethree" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
-    <td id="yellowthreeone" style="border: 3px solid black; border-left: 5px solid black; border-bottom: 5px solid black;"></td>
-    <td id="yellowthreetwo" style="border: 3px solid black; border-bottom: 5px solid black;"></td>
-    <td id="yellowthreethree" style="border: 3px solid black; border-right: 5px solid black; border-bottom: 5px solid black;">
-        <button class="rightturn" onClick="turnCubeD()">D</button>
-&nbsp;
-    </td>
-</tr>
-
-<tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td id="orangeoneone" style="border: 3px solid black; border-left: 5px solid black; border-top: 5px solid black;"></td>
-    <td id="orangeonetwo" style="border: 3px solid black; border-top: 5px solid black;"></td>
-    <td id="orangeonethree" style="border: 3px solid black; border-right: 5px solid black; border-top: 5px solid black;"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-</tr>
-
-<tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td id="orangetwoone" style="border: 3px solid black; border-left: 5px solid black;"></td>
-    <td id="orangetwotwo" style="border: 3px solid black;"></td>
-    <td id="orangetwothree" style="border: 3px solid black; border-right: 5px solid black;"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-</tr>
-
-<tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td id="orangethreeone" style="border: 3px solid black; border-bottom: 5px solid black; border-left: 5px solid black;">
-        <button class="downturn" onClick="turnCubeL()">L</button>
-&nbsp;
-    </td>
-    <td id="orangethreetwo" style="border: 3px solid black; border-bottom: 5px solid black;">
-        <button class="downturn" onClick="turnCubeM()">M</button>
-&nbsp;
-    </td>
-    <td id="orangethreethree" style="border: 3px solid black; border-bottom: 5px solid black; border-right: 5px solid black;">
-        <button class="downturn" onClick="turnCubeRP()">R'</button>
-&nbsp;
-    </td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-</tr>
-
-</table>
-
-<br>
-
-<button class="red" onClick="changeActiveColorToRed()">Red</button>
-&nbsp;
-<button class="blue" onClick="changeActiveColorToBlue()">Blue</button>
-&nbsp;
-<button class="white" onClick="changeActiveColorToWhite()">White</button>
-&nbsp;
-<button class="green" onClick="changeActiveColorToGreen()">Green</button>
-&nbsp;
-<button class="yellow" onClick="changeActiveColorToYellow()">Yellow</button>
-&nbsp;
-<button class="orange" onClick="changeActiveColorToOrange()">Orange</button>
-
-</body>
-</html>
+  
+  
+      </script>
+  
+    
+  
+  </body>
+  
+  </html>

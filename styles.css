@@ -13,9 +13,9 @@ html, body {
 
 .text {
   text-align: center;
-  font-family: Helvetica;
-  font-size: 0.8rem;
-  color: grey;
+  font-family: Sans-Mono;
+  font-size: 1.5rem;
+  color: #FFFDD0;
   pointer-events: none;
 }
 

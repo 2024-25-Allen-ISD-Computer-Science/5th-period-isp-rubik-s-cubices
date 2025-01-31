@@ -1,7 +1,7 @@
 html, body {
   height: 100%;
   overflow: hidden;
-  background: radial-gradient(circle, white, rgba(0, 0, 0, 0.5));
+  background: linear-gradient(to bottom right, rgb(31, 0, 188), rgb(0, 157, 255));
   background-color: #2F2F31;
   background-blend-mode: overlay;
 }

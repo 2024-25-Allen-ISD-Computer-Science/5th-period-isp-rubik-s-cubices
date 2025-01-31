@@ -51,6 +51,7 @@ html, body {
 #piece4 > .element.top > .sticker {
   background-image: URL("https://i.pinimg.com/originals/5a/74/35/5a74355a6f045d6a81fe506a80d67f7d.png");
   background-size: cover;
+  transform: inherit;
 }
 
 .cube {

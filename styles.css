@@ -77,3 +77,16 @@ td {
     height:100px;
     box-shadow: 0 4px 6px rgba (0, 0, 0, 0.1);
 }
+
+button.reset {
+    background-color: #f2f2f2;
+    border: #000 solid 2px;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    border-radius: 8px;
+    padding: 8px 16px;
+    display: inline-block;
+    transition: all 0.3s ease;

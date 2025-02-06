@@ -1,3 +1,6 @@
+function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
 var colors = ['blue', 'green', 'white', 'yellow', 'orange', 'red'],
   pieces = document.getElementsByClassName('piece');
   
@@ -167,3 +170,33 @@ function rotateFromKeyPress(event) {
 
 
 window.addEventListener("keydown", rotateFromKeyPress);
+
+async function scramble(){
+var oneMove;
+var twoMove;
+
+for (let i = 0; i < 30; i++) {
+  var random = Math.floor(Math.random() * 6);
+var face = Math.random() < 0.5;
+
+const invalidMoves = {
+  0: [0, 1],
+  1: [1, 0],
+  2: [2, 3],
+  3: [3, 2],
+  4: [4, 5],
+  5: [5, 4],
+};
+
+if (!invalidMoves[random].includes(oneMove) && !invalidMoves[random].includes(twoMove)) {
+  animateRotation(random, face, Date.now());
+  await delay(301);
+  twoMove = oneMove;
+  oneMove = random;
+} else {
+i--;
+}
+
+}
+
+}

@@ -1,9 +1,5 @@
 var activeColor = '';
 
-function resetCube() {
-	location.reload();
-}
-
 function changeActiveColorToRed() {
 	activeColor = 'red';
 }
@@ -322,6 +318,37 @@ function turnCubeRightOne(){
     var element = document.getElementById('yellowonethree');
     var backgroundColor = element.style.backgroundColor;
     document.getElementById('blueonethree').style.backgroundColor = yellowBackgroundThree;
+    
+    var element = document.getElementById('redoneone');
+    var redOne = element.style.backgroundColor;
+    
+    var element = document.getElementById('redonetwo');
+    var redTwo = element.style.backgroundColor;
+    
+    var element = document.getElementById('redonethree');
+    var redThree = element.style.backgroundColor;
+    
+    var element = document.getElementById('redtwoone');
+    var redFour = element.style.backgroundColor;
+    
+    var element = document.getElementById('redtwotwo');
+    var redFive = element.style.backgroundColor;
+    
+    var element = document.getElementById('redtwothree');
+    var redSix = element.style.backgroundColor;
+    
+    var element = document.getElementById('redthreeone');
+    var redSeven = element.style.backgroundColor;
+    
+    var element = document.getElementById('redthreetwo');
+    var redEight = element.style.backgroundColor;
+    
+    var element = document.getElementById('redthreethree');
+    var redNine = element.style.backgroundColor;
+    
+    document.getElementById('redoneone').style.backgroundColor = redThree;
+    document.getElementById('redtwoone').style.backgroundColor = redTwo;
+    document.getElementById('redthreeone').style.backgroundColor = redThree;
     
 }
 

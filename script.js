@@ -1,5 +1,9 @@
 var activeColor = '';
 
+function resetCube() {
+	location.reload();
+}
+
 function changeActiveColorToRed() {
 	activeColor = 'red';
 }

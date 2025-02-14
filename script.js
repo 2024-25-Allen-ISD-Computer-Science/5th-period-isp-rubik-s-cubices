@@ -23,6 +23,11 @@ function changeActiveColorToYellow() {
 function changeActiveColorToOrange() {
 	activeColor = 'orange';
 }
+
+function resetCube() {
+  loadFunction();
+}
+
 function loadFunction() {
     document.getElementById('redoneone').style.backgroundColor = 'red';
     document.getElementById('redonetwo').style.backgroundColor = 'red';

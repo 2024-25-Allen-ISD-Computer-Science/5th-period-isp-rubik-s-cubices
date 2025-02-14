@@ -24,6 +24,29 @@ function changeActiveColorToOrange() {
 	activeColor = 'orange';
 }
 
+function scrambleCube() {
+  const moves = [
+    turnCubeLeftOne,
+    turnCubeLeftTwo,
+    turnCubeLeftThree,
+    turnCubeRightOne,
+    turnCubeRightTwo,
+    turnCubeRightThree,
+    turnCubeUpOne,
+    turnCubeUpTwo,
+    turnCubeUpThree,
+    turnCubeDownOne,
+    turnCubeDownTwo,
+    turnCubeDownThree
+  ];
+  const numMoves = 20;
+	
+  for (let i = 0; i < numMoves; i++) {
+    const randomIndex = Math.floor(Math.random() * moves.length);
+    moves[randomIndex]();
+  }
+}
+
 function resetCube() {
   loadFunction();
 }

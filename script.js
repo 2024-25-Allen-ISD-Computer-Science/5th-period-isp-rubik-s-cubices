@@ -1,7 +1,7 @@
 function delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
-var colors = ['blue', 'green', 'white', 'yellow', 'orange', 'red'],
+var colors = ['blue', 'green', 'white', 'yellow', 'red', 'orange'],
   pieces = document.getElementsByClassName('piece');
   
   // Returns j-th adjacent face of i-th face

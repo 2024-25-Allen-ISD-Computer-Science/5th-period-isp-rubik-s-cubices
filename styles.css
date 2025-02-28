@@ -5,6 +5,12 @@ html, body {
   background-color: #2F2F31;
   background-blend-mode: overlay;
 }
+.button {
+  background-color: black;
+  Font-family: times;
+  font-size: 1.25rem;
+  color: gold;
+}
 
 .credits {
   width: 100%;
@@ -113,3 +119,4 @@ html, body {
 }
 .cube > .piece > .element > .sticker.red {
   background-color: #DF0500;
+}

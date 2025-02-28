@@ -200,3 +200,7 @@ i--;
 }
 
 }
+
+function reset(){
+  window.location.reload();
+}

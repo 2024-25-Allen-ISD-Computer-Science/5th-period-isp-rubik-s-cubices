@@ -23,34 +23,6 @@ function changeActiveColorToYellow() {
 function changeActiveColorToOrange() {
 	activeColor = 'orange';
 }
-
-function scrambleCube() {
-  const moves = [
-    turnCubeLeftOne,
-    turnCubeLeftTwo,
-    turnCubeLeftThree,
-    turnCubeRightOne,
-    turnCubeRightTwo,
-    turnCubeRightThree,
-    turnCubeUpOne,
-    turnCubeUpTwo,
-    turnCubeUpThree,
-    turnCubeDownOne,
-    turnCubeDownTwo,
-    turnCubeDownThree
-  ];
-  const numMoves = 20;
-	
-  for (let i = 0; i < numMoves; i++) {
-    const randomIndex = Math.floor(Math.random() * moves.length);
-    moves[randomIndex]();
-  }
-}
-
-function resetCube() {
-  loadFunction();
-}
-
 function loadFunction() {
     document.getElementById('redoneone').style.backgroundColor = 'red';
     document.getElementById('redonetwo').style.backgroundColor = 'red';
@@ -179,6 +151,51 @@ function turnCubeLeftOne(){
     var backgroundColor = element.style.backgroundColor;
     document.getElementById('yellowonethree').style.backgroundColor = blueBackgroundThree;
     
+    var element = document.getElementById('redoneone');
+    var redOne = element.style.backgroundColor;
+    document.getElementById('redoneone').style.backgroundColor = '';
+    
+    var element = document.getElementById('redonetwo');
+    var redTwo = element.style.backgroundColor;
+    document.getElementById('redonetwo').style.backgroundColor = '';
+    
+    var element = document.getElementById('redonethree');
+    var redThree = element.style.backgroundColor;
+    document.getElementById('redonethree').style.backgroundColor = '';
+    
+    var element = document.getElementById('redtwoone');
+    var redFour = element.style.backgroundColor;
+    document.getElementById('redtwoone').style.backgroundColor = '';
+    
+    var element = document.getElementById('redtwotwo');
+    var redFive = element.style.backgroundColor;
+    document.getElementById('redtwotwo').style.backgroundColor = '';
+    
+    var element = document.getElementById('redtwothree');
+    var redSix = element.style.backgroundColor;
+    document.getElementById('redtwothree').style.backgroundColor = '';
+    
+    var element = document.getElementById('redthreeone');
+    var redSeven = element.style.backgroundColor;
+    document.getElementById('redthreeone').style.backgroundColor = '';
+    
+    var element = document.getElementById('redthreetwo');
+    var redEight = element.style.backgroundColor;
+    document.getElementById('redthreetwo').style.backgroundColor = '';
+    
+    var element = document.getElementById('redthreethree');
+    var redNine = element.style.backgroundColor;
+    document.getElementById('redthreethree').style.backgroundColor = '';
+    
+    document.getElementById('redoneone').style.backgroundColor = redSeven;
+    document.getElementById('redonetwo').style.backgroundColor = redFour;
+    document.getElementById('redonethree').style.backgroundColor = redOne;
+    document.getElementById('redtwoone').style.backgroundColor = redEight;
+    document.getElementById('redtwothree').style.backgroundColor = redTwo;
+    document.getElementById('redthreeone').style.backgroundColor = redNine;
+    document.getElementById('redthreetwo').style.backgroundColor = redSix;
+    document.getElementById('redthreethree').style.backgroundColor = redThree;
+    document.getElementById('redtwotwo').style.backgroundColor = redFive;
 }
 
 function turnCubeLeftTwo(){
@@ -291,6 +308,51 @@ function turnCubeLeftThree(){
     var backgroundColor = element.style.backgroundColor;
     document.getElementById('yellowthreethree').style.backgroundColor = blueBackgroundThree;
     
+    var element = document.getElementById('orangeoneone');
+    var orangeOne = element.style.backgroundColor;
+    document.getElementById('orangeoneone').style.backgroundColor = '';
+    
+    var element = document.getElementById('orangeonetwo');
+    var orangeTwo = element.style.backgroundColor;
+    document.getElementById('orangeonetwo').style.backgroundColor = '';
+    
+    var element = document.getElementById('orangeonethree');
+    var orangeThree = element.style.backgroundColor;
+    document.getElementById('orangeonethree').style.backgroundColor = '';
+    
+    var element = document.getElementById('orangetwoone');
+    var orangeFour = element.style.backgroundColor;
+    document.getElementById('orangetwoone').style.backgroundColor = '';
+    
+    var element = document.getElementById('orangetwotwo');
+    var orangeFive = element.style.backgroundColor;
+    document.getElementById('orangetwotwo').style.backgroundColor = '';
+    
+    var element = document.getElementById('orangetwothree');
+    var orangeSix = element.style.backgroundColor;
+    document.getElementById('orangetwothree').style.backgroundColor = '';
+    
+    var element = document.getElementById('orangethreeone');
+    var orangeSeven = element.style.backgroundColor;
+    document.getElementById('orangethreeone').style.backgroundColor = '';
+    
+    var element = document.getElementById('orangethreetwo');
+    var orangeEight = element.style.backgroundColor;
+    document.getElementById('orangethreetwo').style.backgroundColor = '';
+    
+    var element = document.getElementById('orangethreethree');
+    var orangeNine = element.style.backgroundColor;
+    document.getElementById('orangethreethree').style.backgroundColor = '';
+    
+    document.getElementById('orangeoneone').style.backgroundColor = orangeSeven;
+    document.getElementById('orangeonetwo').style.backgroundColor = orangeFour;
+    document.getElementById('orangeonethree').style.backgroundColor = orangeOne;
+    document.getElementById('orangetwoone').style.backgroundColor = orangeEight;
+    document.getElementById('orangetwothree').style.backgroundColor = orangeTwo;
+    document.getElementById('orangethreeone').style.backgroundColor = orangeNine;
+    document.getElementById('orangethreetwo').style.backgroundColor = orangeSix;
+    document.getElementById('orangethreethree').style.backgroundColor = orangeThree;
+    document.getElementById('orangetwotwo').style.backgroundColor = orangeFive;
 }
 
 function turnCubeRightOne(){
@@ -349,34 +411,49 @@ function turnCubeRightOne(){
     
     var element = document.getElementById('redoneone');
     var redOne = element.style.backgroundColor;
+    document.getElementById('redoneone').style.backgroundColor = '';
     
     var element = document.getElementById('redonetwo');
     var redTwo = element.style.backgroundColor;
+    document.getElementById('redonetwo').style.backgroundColor = '';
     
     var element = document.getElementById('redonethree');
     var redThree = element.style.backgroundColor;
+    document.getElementById('redonethree').style.backgroundColor = '';
     
     var element = document.getElementById('redtwoone');
     var redFour = element.style.backgroundColor;
+    document.getElementById('redtwoone').style.backgroundColor = '';
     
     var element = document.getElementById('redtwotwo');
     var redFive = element.style.backgroundColor;
+    document.getElementById('redtwotwo').style.backgroundColor = '';
     
     var element = document.getElementById('redtwothree');
     var redSix = element.style.backgroundColor;
+    document.getElementById('redtwothree').style.backgroundColor = '';
     
     var element = document.getElementById('redthreeone');
     var redSeven = element.style.backgroundColor;
+    document.getElementById('redthreeone').style.backgroundColor = '';
     
     var element = document.getElementById('redthreetwo');
     var redEight = element.style.backgroundColor;
+    document.getElementById('redthreetwo').style.backgroundColor = '';
     
     var element = document.getElementById('redthreethree');
     var redNine = element.style.backgroundColor;
+    document.getElementById('redthreethree').style.backgroundColor = '';
     
     document.getElementById('redoneone').style.backgroundColor = redThree;
+    document.getElementById('redonetwo').style.backgroundColor = redSix;
+    document.getElementById('redonethree').style.backgroundColor = redNine;
     document.getElementById('redtwoone').style.backgroundColor = redTwo;
-    document.getElementById('redthreeone').style.backgroundColor = redThree;
+    document.getElementById('redtwothree').style.backgroundColor = redEight;
+    document.getElementById('redthreeone').style.backgroundColor = redOne;
+    document.getElementById('redthreetwo').style.backgroundColor = redFour;
+    document.getElementById('redthreethree').style.backgroundColor = redSeven;
+    document.getElementById('redtwotwo').style.backgroundColor = redFive;
     
 }
 
@@ -490,6 +567,51 @@ function turnCubeRightThree(){
     var backgroundColor = element.style.backgroundColor;
     document.getElementById('bluethreethree').style.backgroundColor = yellowBackgroundThree;
     
+    var element = document.getElementById('orangeoneone');
+    var orangeOne = element.style.backgroundColor;
+    document.getElementById('orangeoneone').style.backgroundColor = '';
+    
+    var element = document.getElementById('orangeonetwo');
+    var orangeTwo = element.style.backgroundColor;
+    document.getElementById('orangeonetwo').style.backgroundColor = '';
+    
+    var element = document.getElementById('orangeonethree');
+    var orangeThree = element.style.backgroundColor;
+    document.getElementById('orangeonethree').style.backgroundColor = '';
+    
+    var element = document.getElementById('orangetwoone');
+    var orangeFour = element.style.backgroundColor;
+    document.getElementById('orangetwoone').style.backgroundColor = '';
+    
+    var element = document.getElementById('orangetwotwo');
+    var orangeFive = element.style.backgroundColor;
+    document.getElementById('orangetwotwo').style.backgroundColor = '';
+    
+    var element = document.getElementById('orangetwothree');
+    var orangeSix = element.style.backgroundColor;
+    document.getElementById('orangetwothree').style.backgroundColor = '';
+    
+    var element = document.getElementById('orangethreeone');
+    var orangeSeven = element.style.backgroundColor;
+    document.getElementById('orangethreeone').style.backgroundColor = '';
+    
+    var element = document.getElementById('orangethreetwo');
+    var orangeEight = element.style.backgroundColor;
+    document.getElementById('orangethreetwo').style.backgroundColor = '';
+    
+    var element = document.getElementById('orangethreethree');
+    var orangeNine = element.style.backgroundColor;
+    document.getElementById('orangethreethree').style.backgroundColor = '';
+    
+    document.getElementById('orangeoneone').style.backgroundColor = orangeThree;
+    document.getElementById('orangeonetwo').style.backgroundColor = orangeSix;
+    document.getElementById('orangeonethree').style.backgroundColor = orangeNine;
+    document.getElementById('orangetwoone').style.backgroundColor = orangeTwo;
+    document.getElementById('orangetwothree').style.backgroundColor = orangeEight;
+    document.getElementById('orangethreeone').style.backgroundColor = orangeOne;
+    document.getElementById('orangethreetwo').style.backgroundColor = orangeFour;
+    document.getElementById('orangethreethree').style.backgroundColor = orangeSeven;
+    document.getElementById('orangetwotwo').style.backgroundColor = orangeFive;
 }
    
 

@@ -91,3 +91,10 @@ button.reset {
     display: inline-block;
     transition: all 0.3s ease;
 }
+
+.navbar {
+  background-color: #333;
+  padding: 1em;
+  text-align: center;
+}
+

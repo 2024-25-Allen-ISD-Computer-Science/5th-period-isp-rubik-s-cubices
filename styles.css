@@ -115,8 +115,8 @@ html, body {
   background-color: #E0AE00;
 }
 .cube > .piece > .element > .sticker.orange {
-  background-color: #FF5000;
+  background-color: #DF0500;
 }
 .cube > .piece > .element > .sticker.red {
-  background-color: #DF0500;
+  background-color: #FF5000;
 }

@@ -30,7 +30,7 @@ cube.turn = function(face) {
 	var faces = face.split('');
 	for(i = 0; i < length; i++){
 		
-		if(faces[i] === 'f') {				//White Clockwise
+		if(faces[i] === 'f') {				//Front Clockwise
 
 			cubeArray[18] = new_cube[24];  //Face Corners
 			cubeArray[24] = new_cube[26];
@@ -59,7 +59,7 @@ cube.turn = function(face) {
 			
 			new_cube = _.clone(cubeArray);
 		}
-		if(faces[i] === 'F') {				//White Counter Clockwise
+		if(faces[i] === 'F') {				//Front Counter Clockwise
 
 			cubeArray[18] = new_cube[20];  //Face Corners
 			cubeArray[20] = new_cube[26];  
@@ -88,7 +88,7 @@ cube.turn = function(face) {
 			
 			new_cube = _.clone(cubeArray);
 		}
-		if(faces[i] === 'l') {				//Green Clockwise
+		if(faces[i] === 'l') {				//Left Clockwise
 
 			cubeArray[9] = new_cube[15];  //Face Corners
 			cubeArray[15] = new_cube[17];
@@ -118,7 +118,7 @@ cube.turn = function(face) {
 			new_cube = _.clone(cubeArray);
 		}
 
-		if(faces[i] === 'L') {				//Green Counter Clockwise
+		if(faces[i] === 'L') {				//Left Counter Clockwise
 
 			cubeArray[9] = new_cube[11];  //Face Corners
 			cubeArray[11] = new_cube[17];
@@ -148,7 +148,7 @@ cube.turn = function(face) {
 			new_cube = _.clone(cubeArray);
 		}
 
-		if(faces[i] === 'd') {				//Red Clockwise
+		if(faces[i] === 'd') {				//Down Clockwise
 
 			cubeArray[36] = new_cube[42];  //Face Corners
 			cubeArray[42] = new_cube[44];
@@ -178,7 +178,7 @@ cube.turn = function(face) {
 			new_cube = _.clone(cubeArray);
 		}
 
-		if(faces[i] === 'D') {				//Red Counter Clockwise
+		if(faces[i] === 'D') {				//Down Counter Clockwise
 
 			cubeArray[36] = new_cube[38];  //Face Corners
 			cubeArray[38] = new_cube[44];
@@ -208,7 +208,7 @@ cube.turn = function(face) {
 			new_cube = _.clone(cubeArray);
 		}
 
-		if(faces[i] === 'r') {				//Blue Clockwise
+		if(faces[i] === 'r') {				//Right Clockwise
 
 			cubeArray[27] = new_cube[33];  //Face Corners
 			cubeArray[33] = new_cube[35];
@@ -238,7 +238,7 @@ cube.turn = function(face) {
 			new_cube = _.clone(cubeArray);
 		}
 
-		if(faces[i] === 'R') {				//Blue Counter Clockwise
+		if(faces[i] === 'R') {				//Right Counter Clockwise
 
 			cubeArray[27] = new_cube[29];  //Face Corners
 			cubeArray[29] = new_cube[35];
@@ -268,7 +268,7 @@ cube.turn = function(face) {
 			new_cube = _.clone(cubeArray);
 		}
 
-		if(faces[i] === 'u') {				//Orange Clockwise
+		if(faces[i] === 'u') {				//Up Clockwise
 
 			cubeArray[0] = new_cube[6];  //Face Corners
 			cubeArray[6] = new_cube[8];
@@ -298,7 +298,7 @@ cube.turn = function(face) {
 			new_cube = _.clone(cubeArray);
 		}
 
-		if(faces[i] === 'U') {				//Orange Counter Clockwise
+		if(faces[i] === 'U') {				//Up Counter Clockwise
 
 			cubeArray[0] = new_cube[2];  //Face Corners
 			cubeArray[2] = new_cube[8];
@@ -328,7 +328,7 @@ cube.turn = function(face) {
 			new_cube = _.clone(cubeArray);
 		}
 
-		if(faces[i] === 'b') {				//Yellow Clockwise
+		if(faces[i] === 'b') {				//Back Clockwise
 
 			cubeArray[45] = new_cube[51];  //Face Corners
 			cubeArray[51] = new_cube[53];
@@ -358,7 +358,7 @@ cube.turn = function(face) {
 			new_cube = _.clone(cubeArray);
 		}
 
-		if(faces[i] === 'B') {				//Yellow Counter Clockwise
+		if(faces[i] === 'B') {				//Back Counter Clockwise
 
 			cubeArray[45] = new_cube[47];  //Face Corners
 			cubeArray[47] = new_cube[53];

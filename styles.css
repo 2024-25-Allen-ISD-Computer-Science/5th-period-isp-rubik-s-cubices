@@ -6,10 +6,10 @@ html, body {
   background-blend-mode: overlay;
 }
 .button {
-  background-color: black;
+  background-color: #20B2AA;
   Font-family: times;
   font-size: 1.25rem;
-  color: gold;
+  color: #333333;
 }
 
 .credits {
@@ -21,7 +21,7 @@ html, body {
   text-align: center;
   font-family: Sans-Mono;
   font-size: 1.5rem;
-  color: #FFFDD0;
+  color: #FFFFFF;
   pointer-events: none;
 }
 

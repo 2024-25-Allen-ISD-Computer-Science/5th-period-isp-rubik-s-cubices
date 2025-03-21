@@ -1,7 +1,7 @@
 function delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
-var colors = ['blue', 'green', 'white', 'yellow', 'red', 'orange'],
+var colors = ['blue', 'green', 'white', 'yellow', 'orange', 'red'],
   pieces = document.getElementsByClassName('piece');
   
   // Returns j-th adjacent face of i-th face
@@ -166,6 +166,8 @@ function rotateFromKeyPress(event) {
         break;
       default:
     }
+    cube.turn(event.key);
+    cube.display();
 }
 
 

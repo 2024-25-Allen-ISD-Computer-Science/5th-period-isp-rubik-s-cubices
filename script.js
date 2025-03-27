@@ -949,6 +949,467 @@ function turnCubeDownThree(){
     document.getElementById('redthreethree').style.backgroundColor = yellowBackgroundThree;
 }
 
+function reset(){
+    window.location.reload();
+}
+
+function randomize(){
+    
+    var redCounter = 0;
+    var blueCounter = 0;
+    var whiteCounter = 0;
+    var greenCounter = 0;
+    var yellowCounter = 0;
+    var orangeCounter = 0;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('redoneone').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('redonetwo').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('redonethree').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('redtwoone').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('redtwotwo').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('redtwothree').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('redthreeone').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('redthreetwo').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('redthreethree').style.backgroundColor = randomize;
+    
+    
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('blueoneone').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('blueonetwo').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('blueonethree').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('bluetwoone').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('bluetwotwo').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('bluetwothree').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('bluethreeone').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('bluethreetwo').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('bluethreethree').style.backgroundColor = randomize;
+    
+    
+    
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('whiteoneone').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('whiteonetwo').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('whiteonethree').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('whitetwoone').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('whitetwotwo').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('whitetwothree').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('whitethreeone').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('whitethreetwo').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('whitethreethree').style.backgroundColor = randomize;
+    
+    
+    
+    
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('greenoneone').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('greenonetwo').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('greenonethree').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('greentwoone').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('greentwotwo').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('greentwothree').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('greenthreeone').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('greenthreetwo').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('greenthreethree').style.backgroundColor = randomize;
+    
+    
+    
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('yellowoneone').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('yellowonetwo').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('yellowonethree').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('yellowtwoone').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('yellowtwotwo').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('yellowtwothree').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('yellowthreeone').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('yellowthreetwo').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('yellowthreethree').style.backgroundColor = randomize;
+    
+    
+    
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('orangeoneone').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('orangeonetwo').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('orangeonethree').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('orangetwoone').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('orangetwotwo').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('orangetwothree').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('orangethreeone').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('orangethreetwo').style.backgroundColor = randomize;
+    
+    var randomNumber = Math.floor(Math.random()* 6);
+    
+    var randomColor = ['red', 'blue', 'white', 'lime', 'yellow', 'orange'];
+    
+    var randomize = randomColor[randomNumber];
+    
+    document.getElementById('orangethreethree').style.backgroundColor = randomize;
+}
+
 const rubiksCube = [
     ['W','R','B'],
     ['W','R'],

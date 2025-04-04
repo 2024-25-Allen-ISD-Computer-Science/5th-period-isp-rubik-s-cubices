@@ -1,100 +1,99 @@
 body {
-    background-color: #8fcaf5;
-  }
-  
-  h1 , button {
-    color: white;
-    text-align: center;
-  }
-  
-  p , button {
-    font-family: verdana;
-    font-size: 20px;
-  }
-
-  button {
-    border: #000 solid 2px;
-    color: white;
-    text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
-    border-radius: 8px;
-    padding: 8px 16px;
-    display: inline-block;
-    transition: all 0.3s ease;
-  }
-
-  button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    transform: scale(1.2);
-    
-  }
-
-table {
-    border-collapse: collapse;
+  background-color: #8fcaf5;
 }
 
-td {
-    width: 60px;
-    height: 60px;
-    transition: background-color 0.3s ease;
-}
-
-.red {
-    background-color: red;
-}
-
-.blue {
-    background-color: blue;
-}
-
-.white {
-    background-color: white;
-}
-
-.green {
-    background-color: lime;
-}
-
-.yellow {
-    background-color: yellow;
-}
-
-.orange {
-    
-    background-color: orange;
-}
-
-.logo-container {
-    text-align: center;
-    margin: 0 auto 30px auto;
-    background-color: linear-gradient(145deg, #9ed5ff, #7fbae6);
-    padding: 25px;
-    border-radius: 15px;
-    width: 300px;
-    height:100px;
-    box-shadow: 0 4px 6px rgba (0, 0, 0, 0.1);
-}
-
-button.reset {
-    background-color: #f2f2f2;
-    border: #000 solid 2px;
-    text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
-    border-radius: 8px;
-    padding: 8px 16px;
-    display: inline-block;
-    transition: all 0.3s ease;
-}
-
-.navbar {
-  background-color: #333;
-  padding: 1em;
+h1 , button {
+  color: white;
   text-align: center;
 }
 
+p , button {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+button {
+  border: #000 solid 2px;
+  color: white;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+  border-radius: 8px;
+  padding: 8px 16px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  transform: scale(1.2);
+  
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  width: 60px;
+  height: 60px;
+  transition: background-color 0.3s ease;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.white {
+  background-color: white;
+}
+
+.green {
+  background-color: lime;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.orange {
+  
+  background-color: orange;
+}
+
+.logo-container {
+  text-align: center;
+  margin: 0 auto 30px auto;
+  background-color: linear-gradient(145deg, #9ed5ff, #7fbae6);
+  padding: 25px;
+  border-radius: 15px;
+  width: 300px;
+  height:100px;
+  box-shadow: 0 4px 6px rgba (0, 0, 0, 0.1);
+}
+
+button.reset {
+  background-color: #f2f2f2;
+  border: #000 solid 2px;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+  border-radius: 8px;
+  padding: 8px 16px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.navbar {
+background-color: #333;
+padding: 1em;
+text-align: center;
+}

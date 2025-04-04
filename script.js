@@ -1455,3 +1455,25 @@ const mapping = [
 }*/
 
 console.log(mapping);
+
+document.addEventListener("keydown", function(e) {
+    switch(e.key) {
+        case "ArrowUp":
+            turnCubeUpTwo();
+            break;
+        case "ArrowDown":
+            turnCubeDownTwo();
+            break;
+        case "ArrowLeft":
+            turnCubeLeftTwo();
+            break;
+        case "ArrowRight":
+            turnCubeRightTwo();
+            break;
+    }
+});
+
+
+
+
+
